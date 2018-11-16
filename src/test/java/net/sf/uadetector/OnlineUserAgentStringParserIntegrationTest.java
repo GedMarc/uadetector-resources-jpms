@@ -24,6 +24,7 @@ import java.util.List;
 
 import static org.fest.assertions.Assertions.*;
 
+@SuppressWarnings("Duplicates")
 public class OnlineUserAgentStringParserIntegrationTest
 {
 
@@ -46,7 +47,9 @@ public class OnlineUserAgentStringParserIntegrationTest
 
 			// comparing the name
 			assertThat(agent.getOperatingSystem()
-			                .getName()).isEqualTo(example.getName());
+			                .getName()
+			                .replaceAll("\\s+", "")).isEqualTo(example.getName()
+			                                                          .replaceAll("\\s+", ""));
 
 			// check for unknown family
 			if (OperatingSystemFamily.UNKNOWN == agent.getOperatingSystem()

@@ -301,21 +301,17 @@ public final class UADetectorServiceFactory
 		/**
 		 * {@link URL} to the UAS data delivered in this module
 		 */
-		public static final URL UAS_DATA = ResourceFinder.class.getClassLoader()
-		                                                       .getResource("uas.xml");
+		public static final URL UAS_DATA = ResourceFinder.class
+				                                   .getResource("uas.xml");
 		/**
 		 * {@link URL} to the version information of the delivered UAS data in this module
 		 */
-		public static final URL UAS_VERSION = ResourceFinder.class.getClassLoader()
-		                                                          .getResource("uas.version");
+		public static final URL UAS_VERSION = ResourceFinder.class
+				                                      .getResource("uas.version");
 		/**
 		 * The default data reader to read in <em>UAS data</em> in XML format
 		 */
 		private static final DataReader DEFAULT_DATA_READER = new XmlDataReader();
-		/**
-		 * Path where the UAS data file is stored for the {@code ClassLoader}
-		 */
-		private static final String PATH = "net/sf/uadetector/resources";
 
 		/**
 		 * Constructs an {@code ResourceModuleXmlDataStore} by reading <em>UAS data</em> from the specified URL
@@ -323,8 +319,7 @@ public final class UADetectorServiceFactory
 		 */
 		public ResourceModuleXmlDataStore()
 		{
-			super(DEFAULT_DATA_READER, ResourceFinder.class.getResource("uas.xml"),
-			      ResourceFinder.class.getResource("uas.version"), DEFAULT_CHARSET);
+			super(DEFAULT_DATA_READER, UAS_DATA, UAS_VERSION, DEFAULT_CHARSET);
 		}
 
 	}
