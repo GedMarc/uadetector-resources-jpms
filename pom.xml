@@ -7,12 +7,6 @@
         <artifactId>jwebmp-parent</artifactId>
         <version>0.0.0_0-SNAPSHOT</version>
     </parent>
-
-    <properties>
-        <bundle.symbolicName>net.sf.uadetector.resources</bundle.symbolicName>
-        <bundle.namespace>net.sf.uadetector.service</bundle.namespace>
-    </properties>
-
     <artifactId>uadetector-resources</artifactId>
 
     <name>UADetector :: Resources</name>
@@ -26,7 +20,7 @@
         <dependency>
             <groupId>com.jwebmp</groupId>
             <artifactId>uadetector-core</artifactId>
-            <version>0.0.0_0-SNAPSHOT</version>
+            <version>${project.version}</version>
         </dependency>
 
         <!-- Testing -->
@@ -46,10 +40,12 @@
             <version>1.0-r706900_3</version>
             <scope>test</scope>
         </dependency>
+
         <dependency>
             <groupId>javax.activation</groupId>
             <artifactId>javax.activation-api</artifactId>
         </dependency>
+
         <dependency>
             <groupId>javax.validation</groupId>
             <artifactId>validation-api</artifactId>
