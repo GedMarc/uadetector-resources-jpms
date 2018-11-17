@@ -259,6 +259,11 @@ public final class UADetectorServiceFactory
 	{
 		private static UserAgentStringParser parser = null;
 
+		private CachingAndUpdatingParserHolder()
+		{
+			//Nothing needed
+		}
+
 		public static UserAgentStringParser getParser(URL dataUrl, URL verionUrl, DataStore fallback)
 		{
 			if (parser == null)
@@ -276,6 +281,11 @@ public final class UADetectorServiceFactory
 	private static final class OnlineUpdatingParserHolder
 	{
 		private static UserAgentStringParser parser = null;
+
+		private OnlineUpdatingParserHolder()
+		{
+			//Nothing needed
+		}
 
 		public static UserAgentStringParser getParser(URL dataUrl, URL versionUrl, DataStore fallback)
 		{
@@ -321,6 +331,7 @@ public final class UADetectorServiceFactory
 		{
 			super(DEFAULT_DATA_READER, UAS_DATA, UAS_VERSION, DEFAULT_CHARSET);
 		}
+
 
 	}
 
