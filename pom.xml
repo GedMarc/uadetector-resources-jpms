@@ -18,7 +18,7 @@
 
         <!-- internal -->
         <dependency>
-            <groupId>com.jwebmp</groupId>
+            <groupId>com.jwebmp.thirdparty</groupId>
             <artifactId>uadetector-core</artifactId>
             <version>${project.version}</version>
         </dependency>
@@ -29,6 +29,7 @@
             <artifactId>junit</artifactId>
             <scope>test</scope>
         </dependency>
+
         <dependency>
             <groupId>org.easytesting</groupId>
             <artifactId>fest-assert</artifactId>
