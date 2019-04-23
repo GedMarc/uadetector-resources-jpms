@@ -43,8 +43,8 @@
         </dependency>
 
         <dependency>
-            <groupId>javax.activation</groupId>
-            <artifactId>javax.activation-api</artifactId>
+            <groupId>com.jwebmp.thirdparty</groupId>
+            <artifactId>javax.activation</artifactId>
         </dependency>
 
         <dependency>
