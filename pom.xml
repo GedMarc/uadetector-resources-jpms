@@ -15,12 +15,10 @@
     <packaging>jar</packaging>
 
     <dependencies>
-
         <!-- internal -->
         <dependency>
             <groupId>com.jwebmp.thirdparty</groupId>
             <artifactId>uadetector-core</artifactId>
-            <version>${project.version}</version>
         </dependency>
 
         <!-- Testing -->
@@ -43,9 +41,8 @@
         </dependency>
 
         <dependency>
-            <groupId>jakarta.activation</groupId>
-            <artifactId>jakarta.activation-api</artifactId>
-            <version>1.2.1</version>
+            <groupId>com.jwebmp.thirdparty</groupId>
+            <artifactId>javax.activation</artifactId>
         </dependency>
 
         <dependency>
