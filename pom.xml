@@ -81,5 +81,21 @@
                 </plugins>
             </build>
         </profile>
+        <profile>
+            <id>jdk11</id>
+            <properties>
+                <maven.test.skip>true</maven.test.skip>
+            </properties>
+        </profile>
+        <profile>
+            <id>jdk12</id>
+            <properties>
+                <maven.test.skip>true</maven.test.skip>
+            </properties>
+
+            <build>
+
+            </build>
+        </profile>
     </profiles>
 </project>
