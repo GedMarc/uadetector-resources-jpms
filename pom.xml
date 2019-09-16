@@ -46,56 +46,10 @@
         </dependency>
 
         <dependency>
-            <groupId>javax.validation</groupId>
-            <artifactId>validation-api</artifactId>
+            <groupId>com.jwebmp.thirdparty</groupId>
+            <artifactId>jakarta.validation-api</artifactId>
             <type>jar</type>
         </dependency>
     </dependencies>
 
-    <profiles>
-        <profile>
-            <id>jdk8</id>
-            <build>
-                <plugins>
-                    <plugin>
-                        <groupId>org.moditect</groupId>
-                        <artifactId>moditect-maven-plugin</artifactId>
-                        <executions>
-                            <execution>
-                                <id>add-module-infos</id>
-                                <phase>package</phase>
-                                <goals>
-                                    <goal>add-module-info</goal>
-                                </goals>
-                                <configuration>
-                                    <overwriteExistingFiles>true</overwriteExistingFiles>
-                                    <module>
-                                        <moduleInfoFile>
-                                            src/jre11/java/module-info.java
-                                        </moduleInfoFile>
-                                    </module>
-                                </configuration>
-                            </execution>
-                        </executions>
-                    </plugin>
-                </plugins>
-            </build>
-        </profile>
-        <profile>
-            <id>jdk11</id>
-            <properties>
-                <maven.test.skip>true</maven.test.skip>
-            </properties>
-        </profile>
-        <profile>
-            <id>jdk12</id>
-            <properties>
-                <maven.test.skip>true</maven.test.skip>
-            </properties>
-
-            <build>
-
-            </build>
-        </profile>
-    </profiles>
 </project>
