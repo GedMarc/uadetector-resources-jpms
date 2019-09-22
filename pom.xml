@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>com.jwebmp.thirdparty</groupId>
+        <groupId>com.jwebmp.jpms.thirdparty</groupId>
         <artifactId>jwebmp-ua-detector</artifactId>
         <version>0.0.0_0-SNAPSHOT</version>
     </parent>
@@ -17,39 +17,39 @@
     <dependencies>
         <!-- internal -->
         <dependency>
-            <groupId>com.jwebmp.thirdparty</groupId>
-            <artifactId>uadetector-core</artifactId>
-        </dependency>
+            <groupId>com.jwebmp.jpms.thirdparty</groupId>
+            <artifactId>uadetector-core</artifactId><type>jar</type>
+            </dependency>
 
         <!-- Testing -->
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <scope>test</scope>
-        </dependency>
+            <scope>test</scope><type>jar</type>
+            </dependency>
 
         <dependency>
             <groupId>org.easytesting</groupId>
-            <artifactId>fest-assert</artifactId>
-        </dependency>
+            <artifactId>fest-assert</artifactId><type>jar</type>
+            </dependency>
 
         <dependency>
             <groupId>org.apache.servicemix.bundles</groupId>
             <artifactId>org.apache.servicemix.bundles.commons-csv</artifactId>
             <version>1.0-r706900_3</version>
-            <scope>test</scope>
-        </dependency>
+            <scope>test</scope><type>jar</type>
+            </dependency>
 
         <dependency>
-            <groupId>com.jwebmp.thirdparty</groupId>
-            <artifactId>javax.activation</artifactId>
-        </dependency>
+            <groupId>com.jwebmp.jpms.thirdparty</groupId>
+            <artifactId>javax.activation</artifactId><type>jar</type>
+            </dependency>
 
         <dependency>
-            <groupId>com.jwebmp.thirdparty</groupId>
+            <groupId>com.jwebmp.jpms.thirdparty</groupId>
             <artifactId>jakarta.validation-api</artifactId>
             <type>jar</type>
-        </dependency>
+            </dependency>
     </dependencies>
 
 </project>
